@@ -31,6 +31,7 @@ class ViewSlidePagerAdapter : RecyclerView.Adapter<ViewSlidePagerAdapter.PhotoVi
             curPhoto = listPhoto[adapterPosition]
             binding.imgView.setImageResource(curPhoto.img)
             binding.descriptionTxtView.text = curPhoto.description
+            binding.titleTxtView.text = curPhoto.title
         }
     }
 
