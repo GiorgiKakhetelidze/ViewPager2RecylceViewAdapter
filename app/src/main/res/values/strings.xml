@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HomeWork10</string>
+    <string name="list_size">List Size : </string>
+    <string name="position">Position :</string>
+</resources>

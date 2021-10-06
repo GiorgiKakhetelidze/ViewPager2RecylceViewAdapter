@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/listItemsSizeTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/list_size"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/listItemsSizeNumberTxtView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPager" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/listItemsSizeNumberTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "1"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/itemPositionTxtView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listItemsSizeTxtView"
+        app:layout_constraintTop_toBottomOf="@id/viewPager" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/itemPositionTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/position"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/itemPositionNumberTxtView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listItemsSizeNumberTxtView"
+        app:layout_constraintTop_toBottomOf="@id/viewPager" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/itemPositionNumberTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        tools:text = "1"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itemPositionTxtView"
+        app:layout_constraintTop_toBottomOf="@id/viewPager" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
